@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: rgb(5, 79, 148);
+    background-color: #39added8;
+}
+
+/* Header Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    border-bottom: 1px solid  #03182913;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(7, 31, 45);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #0d3c45;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #0a304d;
+    line-height: 1.8;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #190136;
+    border: 1px dashed #250d44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #02144d;
+    font-size: 0.9rem;
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.services p {
+    font-size: 1.1rem;
+    color: #4d25de;
+    margin-bottom: 1.5rem;
+}
+
+.show-more {
+    color: #0a2946;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #071b2e;
+    padding-bottom: 2px;
+}
+
+/* Brands Section */
+.brands {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-logos span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 1rem;
+}
+
+/* Capabilities Section */
+.capabilities {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.capabilities-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.capabilities-content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.capabilities-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.capabilities-skills {
+    flex: 1;
+    max-width: 500px;
+}
+
+.skill-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.skill-count {
+    font-size: 1rem;
+    color: #03395e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 5%;
+    border-top: 1px solid #160a32;
+    color: 071b2e;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin-bottom: 2rem;
+    }
+    
+    .capabilities {
+        flex-direction: column;
+    }
+    
+    .capabilities-content {
+        margin-bottom: 3rem;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+}
